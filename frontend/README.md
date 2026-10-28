@@ -22,6 +22,14 @@ npm start
 
 Open <http://localhost:5173>. Set `FRONTEND_PORT` to change the static frontend port; if you do, set the backend's `FRONTEND_ORIGIN` to that exact origin and restart the backend.
 
+For the integrated one-command demo, run this from the repository root instead:
+
+```sh
+node scripts/start-demo.cjs
+```
+
+Then open <http://localhost:3001>. The launcher serves the frontend assets and backend API from the same local origin.
+
 ## Demo walkthrough
 
 1. Confirm the page reports that the demo API is connected.

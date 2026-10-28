@@ -1,4 +1,6 @@
-const API_BASE = 'http://localhost:3001';
+// The single-command demo serves this UI and API from one origin; the optional
+// two-terminal setup serves the UI on 5173 and the API on 3001.
+const API_BASE = window.location.port === '3001' ? window.location.origin : 'http://localhost:3001';
 const form = document.querySelector('#finder-form');
 const studentSelect = document.querySelector('#student-select');
 const findButton = document.querySelector('#find-button');

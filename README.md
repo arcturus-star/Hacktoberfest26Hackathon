@@ -1,3 +1,11 @@
+## Run the complete local demo
+
+From the repository root: `node scripts/start-demo.cjs`, then open http://localhost:3001. Node 20+ only; no installation or credentials required. This serves the frontend and real recommendation API together.
+
+The earlier single-file baseline was browser verified. This frontend refresh passes JavaScript syntax checks; fresh browser verification is pending because access to the local demo page was declined in this session.
+
+The frontend lives in `frontend/`; the one-command launcher serves its assets alongside the backend API. Public hosting and submission are not completed.
+
 # Student activity recommendations
 
 Hacktoberfest 2026 Hackathon, Loughborough.

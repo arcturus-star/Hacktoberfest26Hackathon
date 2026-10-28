@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5f0">
+    <title>LboroConnect · Find your next activity</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="LboroConnect home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Lboro<span class="brand-light">Connect</span></span>
+      </a>
+      <div class="demo-label"><span class="demo-dot"></span> Hackathon demo <span class="label-divider">·</span> Synthetic events</div>
+    </header>
+
+    <main class="layout">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">YOUR CAMPUS, A LITTLE CLOSER</p>
+        <h1 id="page-title">Find something<br><span>worth showing up for.</span></h1>
+        <p class="intro-copy">Discover activities that fit your interests and make it easier to take the first step.</p>
+        <div class="privacy-note"><span aria-hidden="true">✳</span><span>Fictional students and example activities. No university services are connected.</span></div>
+      </section>
+
+      <section class="finder panel" aria-labelledby="finder-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PERSONALISED PICKS</p>
+            <h2 id="finder-title">Explore activities</h2>
+          </div>
+          <span class="step-badge">01 <span>/ 01</span></span>
+        </div>
+
+        <form id="finder-form">
+          <label for="student-select">Choose a demo student</label>
+          <div class="form-row">
+            <select id="student-select" name="student" required disabled>
+              <option value="">Loading students…</option>
+            </select>
+            <button id="find-button" type="submit" disabled>
+              <span>Find activities</span><span class="arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <p class="field-hint">Recommendations use interests and previous demo attendance.</p>
+        </form>
+
+        <div id="api-status" class="api-status" role="status" aria-live="polite">
+          <span class="status-indicator"></span><span id="api-status-text">Connecting to the demo API…</span>
+        </div>
+      </section>
+
+      <section id="results-section" class="results" aria-labelledby="results-title" hidden>
+        <div class="results-header">
+          <div>
+            <p class="eyebrow">MADE FOR YOU</p>
+            <h2 id="results-title">Your recommendations</h2>
+          </div>
+          <span id="result-count" class="result-count"></span>
+        </div>
+        <div id="notice" class="notice" role="status" hidden></div>
+        <div id="cards" class="cards"></div>
+      </section>
+
+      <section id="message-panel" class="message-panel" role="status" aria-live="polite" hidden></section>
+    </main>
+
+    <footer class="footer">
+      <span>Good plans start with one small yes.</span>
+      <span>Example listings are synthetic · Times shown in UK time</span>
+    </footer>
+  </body>
+</html>

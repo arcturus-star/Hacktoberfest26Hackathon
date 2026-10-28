@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { formatDateTimeRange } from '../utils/formatters.js';
 
 export default function RecommendationCard({ recommendation }) {
   const { activityId, reason, activity, isResolved } = recommendation;
+  const [showFriendPreview, setShowFriendPreview] = useState(false);
   const timeFormatted = formatDateTimeRange(activity?.start, activity?.end);
 
   return (
@@ -35,6 +36,20 @@ export default function RecommendationCard({ recommendation }) {
       {activity?.description && (
         <p className="card-description">{activity.description}</p>
       )}
+
+      <section className="feature-preview" aria-label="Future feature previews">
+        <span className="badge badge-source">Concept preview · not connected</span>
+        <details>
+          <summary>Calendar example: “You’re free at this time”</summary>
+          <p>With your permission, the app would compare this activity’s start and end with your calendar’s busy periods. If there were no overlaps, it would show this suggestion; conflicting activities could be filtered out. No calendar has been checked for this card.</p>
+        </details>
+        <button type="button" className="btn btn-secondary" aria-expanded={showFriendPreview} onClick={() => setShowFriendPreview(value => !value)}>
+          Go with a friend · preview
+        </button>
+        {showFriendPreview && (
+          <p role="status">You would choose a friend, preview an invitation to {activity?.name || 'this activity'}, then decide whether to send it. A future version could also suggest activities your consenting friends enjoy. This is an explanation only: no friend list is connected and no invitation is sent.</p>
+        )}
+      </section>
 
       <div className="card-footer">
         <div className="card-tags" aria-label="Activity tags">

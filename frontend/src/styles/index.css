@@ -698,3 +698,9 @@ body {
   font-size: 0.8rem;
   color: var(--color-text-muted);
 }
+
+/* Clearly separated explanatory concepts, never live recommendation signals. */
+.feature-preview { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; border-radius: 12px; background: #f8fafc; color: #334155; }
+.feature-preview details { margin: .8rem 0; }
+.feature-preview summary { cursor: pointer; font-weight: 600; line-height: 1.5; }
+.feature-preview p { margin: .6rem 0; font-size: .875rem; line-height: 1.65; }

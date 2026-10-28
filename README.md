@@ -107,3 +107,12 @@ A static-only host such as GitHub Pages cannot run this Node backend. It would n
 ## Further project context
 
 [PROJECT.md](PROJECT.md) describes the MVP and stretch goals. [TEAM_HANDOFF.md](TEAM_HANDOFF.md) records the original team plan. Calendar, friendships and real university data access remain future work.
+
+## Future features shown as demo concepts
+
+Activity cards now include a clearly labelled **Concept preview · not connected** section. These elements explain the original stretch ideas; they do not change ranking or claim access to personal data.
+
+- **Go with a friend · preview:** opens an explanation of choosing a friend, reviewing an invitation for that activity, and explicitly deciding to send it. Nothing is sent and no friend list is connected. A future implementation could also use consenting friends’ attendance or shared interests as a recommendation signal, explaining the connection without exposing private details.
+- **Calendar example: “You’re free at this time”:** expands an explanation of comparing an activity’s start/end against calendar busy intervals, with permission. A future implementation would show availability only after checking for overlaps and could filter conflicts. The displayed wording is an example, not a claim that the selected student is free. Synthetic busy intervals would be the first implementation step before any real calendar integration.
+
+To demonstrate these ideas, open an activity card, expand the calendar example and click the friend preview. These controls provide explanations only: there are no calendar reads, invitation requests, friendship records or new API endpoints behind them.

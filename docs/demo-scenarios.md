@@ -1,3 +1,33 @@
+# Verified backend demo — 2026-10-28
+
+This section supersedes the provisional source-only scenarios below. Backend baseline: c313412. The integrated service consumes 3 students, 32 activities and 4 attendance links from backend/data/*.json. Use S001 Emma Thompson, S002 James Chen and S003 Sarah Williams. Activity IDs are activity-eNNN; do not use the old E-prefixed IDs or S004/S007/S018 in the shipped demo.
+
+## Executed verification
+
+Run from backend: node --test (21 tests passed). Run from repository root: node scripts/verify-demo.cjs (nine fixed-clock HTTP student scenarios passed, with repeatability, ID resolution, exclusion and offline fallback assertions). No credentials or external model requests were used. npm is unavailable on the validation machine; the equivalent Node commands work without installation.
+
+At 2026-10-28T12:00:00Z, observed top five:
+- S001: activity-e004, activity-e015, activity-e013, activity-e001, activity-e002.
+- S002: activity-e003, activity-e012, activity-e013, activity-e016, activity-e035.
+- S003: activity-e005, activity-e010, activity-e021, activity-e003, activity-e012.
+
+At 2026-11-06T16:00:00Z:
+- S001: activity-e015, activity-e013, activity-e017, activity-e020, activity-e022.
+- S002: activity-e013, activity-e016, activity-e035, activity-e019, activity-e021.
+- S003: activity-e021, activity-e015, activity-e016, activity-e035, activity-e019.
+
+At 2026-11-20T00:00:00Z all three returned HTTP 200 with empty recommendations. The server factory's injected clock is used; no unsupported HTTP clock parameter is required. S003 football activity-e001 is an attendance-only recommendation at the primary clock, verified with limit=20 and an explanation citing past attendance rather than personal interest. Already-attended future-instance exclusion is covered by the backend unit test; the shipped attendance records are past instances.
+
+## Data decisions and remaining limitations
+
+The backend ships a subset of the source students and events, plus two explicitly synthetic past activities. End times use the documented 90-minute duration. Ten malformed source event rows are absent from the JSON; source CSV quoting remains unresolved but does not prevent JSON service startup. Do not expand the dataset during deadline integration. Student interests are curated, not a lossless conversion of all rating columns. Preserve the shipped contract for frontend work.
+
+Frontend/browser checks remain pending the other agent's branch; their instructions are in README.md on feature/demo-integration. No end-to-end UI success or submission is claimed. Live Gemma and calendar/Loughborough integrations remain unverified. Backend CORS defaults to disabled unless FRONTEND_ORIGIN is explicitly set; match the actual frontend URL.
+
+## Archived source audit and provisional scenarios
+
+The material below records the earlier source audit, not the current service acceptance status.
+
 # Existing-data validation and repeatable demo
 
 ## Scope and evidence

@@ -1,0 +1,100 @@
+date,merchant,amount,currency,category,description
+2026-03-03,FreshMart Groceries,68.55,USD,Groceries,Weekly Grocery Run
+2026-03-04,Metro Transit Pass,30.48,USD,Transport,Metro Transit Pass
+2026-03-05,StreamFlix HD,14.99,USD,Subscriptions,StreamFlix Monthly Plan
+2026-03-07,Bean & Leaf Cafe,8.23,USD,Dining,Dining at Bean & Leaf Cafe
+2026-03-10,FreshMart Groceries,68.92,USD,Groceries,Weekly Grocery Run
+2026-03-11,Corner Hardware & Home,45.38,USD,Shopping,Purchase at Corner Hardware & Home
+2026-03-14,CloudVault Backup Pro,12.99,USD,Subscriptions,CloudVault Backup Pro Monthly Auto-Renewal
+2026-03-15,Harbor Noodle House,35.12,USD,Dining,Dining at Harbor Noodle House
+2026-03-17,FreshMart Groceries,82.81,USD,Groceries,Weekly Grocery Run
+2026-03-18,GridPower Electric,67.10,USD,Utilities,Monthly Electric Utility Bill
+2026-03-20,CityFuel Station,41.67,USD,Transport,CityFuel Station
+2026-03-22,Neighborhood Bistro,44.91,USD,Dining,Dining at Neighborhood Bistro
+2026-03-25,FreshMart Groceries,52.60,USD,Groceries,Weekly Grocery Run
+2026-03-27,Everyday Goods Co,54.88,USD,Shopping,Purchase at Everyday Goods Co
+2026-04-03,FreshMart Groceries,71.90,USD,Groceries,Weekly Grocery Run
+2026-04-04,Metro Transit Pass,29.80,USD,Transport,Metro Transit Pass
+2026-04-05,StreamFlix HD,14.99,USD,Subscriptions,StreamFlix Monthly Plan
+2026-04-07,Bean & Leaf Cafe,12.83,USD,Dining,Dining at Bean & Leaf Cafe
+2026-04-10,FreshMart Groceries,58.07,USD,Groceries,Weekly Grocery Run
+2026-04-11,Corner Hardware & Home,28.73,USD,Shopping,Purchase at Corner Hardware & Home
+2026-04-14,CloudVault Backup Pro,12.99,USD,Subscriptions,CloudVault Backup Pro Monthly Auto-Renewal
+2026-04-15,Harbor Noodle House,32.32,USD,Dining,Dining at Harbor Noodle House
+2026-04-17,FreshMart Groceries,73.01,USD,Groceries,Weekly Grocery Run
+2026-04-18,GridPower Electric,83.53,USD,Utilities,Monthly Electric Utility Bill
+2026-04-20,CityFuel Station,43.51,USD,Transport,CityFuel Station
+2026-04-22,Neighborhood Bistro,51.37,USD,Dining,Dining at Neighborhood Bistro
+2026-04-25,FreshMart Groceries,52.92,USD,Groceries,Weekly Grocery Run
+2026-04-27,Everyday Goods Co,36.80,USD,Shopping,Purchase at Everyday Goods Co
+2026-05-03,FreshMart Groceries,85.58,USD,Groceries,Weekly Grocery Run
+2026-05-04,Metro Transit Pass,27.04,USD,Transport,Metro Transit Pass
+2026-05-05,StreamFlix HD,14.99,USD,Subscriptions,StreamFlix Monthly Plan
+2026-05-07,Bean & Leaf Cafe,7.09,USD,Dining,Dining at Bean & Leaf Cafe
+2026-05-10,FreshMart Groceries,80.62,USD,Groceries,Weekly Grocery Run
+2026-05-11,Corner Hardware & Home,50.05,USD,Shopping,Purchase at Corner Hardware & Home
+2026-05-14,CloudVault Backup Pro,12.99,USD,Subscriptions,CloudVault Backup Pro Monthly Auto-Renewal
+2026-05-15,Harbor Noodle House,30.30,USD,Dining,Dining at Harbor Noodle House
+2026-05-17,FreshMart Groceries,88.39,USD,Groceries,Weekly Grocery Run
+2026-05-18,GridPower Electric,89.48,USD,Utilities,Monthly Electric Utility Bill
+2026-05-20,CityFuel Station,40.40,USD,Transport,CityFuel Station
+2026-05-22,Neighborhood Bistro,44.94,USD,Dining,Dining at Neighborhood Bistro
+2026-05-25,FreshMart Groceries,68.99,USD,Groceries,Weekly Grocery Run
+2026-05-27,Everyday Goods Co,52.64,USD,Shopping,Purchase at Everyday Goods Co
+2026-06-03,FreshMart Groceries,49.49,USD,Groceries,Weekly Grocery Run
+2026-06-04,Metro Transit Pass,25.82,USD,Transport,Metro Transit Pass
+2026-06-05,StreamFlix HD,14.99,USD,Subscriptions,StreamFlix Monthly Plan
+2026-06-07,Bean & Leaf Cafe,9.59,USD,Dining,Dining at Bean & Leaf Cafe
+2026-06-10,FreshMart Groceries,76.86,USD,Groceries,Weekly Grocery Run
+2026-06-11,Corner Hardware & Home,46.00,USD,Shopping,Purchase at Corner Hardware & Home
+2026-06-14,CloudVault Backup Pro,12.99,USD,Subscriptions,CloudVault Backup Pro Monthly Auto-Renewal
+2026-06-15,Harbor Noodle House,34.84,USD,Dining,Dining at Harbor Noodle House
+2026-06-17,FreshMart Groceries,63.01,USD,Groceries,Weekly Grocery Run
+2026-06-18,GridPower Electric,79.01,USD,Utilities,Monthly Electric Utility Bill
+2026-06-20,CityFuel Station,41.09,USD,Transport,CityFuel Station
+2026-06-22,Neighborhood Bistro,43.46,USD,Dining,Dining at Neighborhood Bistro
+2026-06-25,FreshMart Groceries,65.35,USD,Groceries,Weekly Grocery Run
+2026-06-27,Everyday Goods Co,49.01,USD,Shopping,Purchase at Everyday Goods Co
+2026-07-03,FreshMart Groceries,85.08,USD,Groceries,Weekly Grocery Run
+2026-07-04,Metro Transit Pass,26.57,USD,Transport,Metro Transit Pass
+2026-07-05,StreamFlix HD,19.99,USD,Subscriptions,StreamFlix Monthly Plan
+2026-07-07,Bean & Leaf Cafe,10.21,USD,Dining,Dining at Bean & Leaf Cafe
+2026-07-10,FreshMart Groceries,58.82,USD,Groceries,Weekly Grocery Run
+2026-07-11,Corner Hardware & Home,23.56,USD,Shopping,Purchase at Corner Hardware & Home
+2026-07-14,CloudVault Backup Pro,12.99,USD,Subscriptions,CloudVault Backup Pro Monthly Auto-Renewal
+2026-07-15,Harbor Noodle House,33.58,USD,Dining,Dining at Harbor Noodle House
+2026-07-17,FreshMart Groceries,65.26,USD,Groceries,Weekly Grocery Run
+2026-07-18,GridPower Electric,76.77,USD,Utilities,Monthly Electric Utility Bill
+2026-07-20,CityFuel Station,35.81,USD,Transport,CityFuel Station
+2026-07-22,Neighborhood Bistro,31.63,USD,Dining,Dining at Neighborhood Bistro
+2026-07-25,FreshMart Groceries,85.46,USD,Groceries,Weekly Grocery Run
+2026-07-27,Everyday Goods Co,52.66,USD,Shopping,Purchase at Everyday Goods Co
+2026-08-03,FreshMart Groceries,52.59,USD,Groceries,Weekly Grocery Run
+2026-08-04,Metro Transit Pass,28.20,USD,Transport,Metro Transit Pass
+2026-08-05,StreamFlix HD,19.99,USD,Subscriptions,StreamFlix Monthly Plan
+2026-08-07,Bean & Leaf Cafe,8.27,USD,Dining,Dining at Bean & Leaf Cafe
+2026-08-10,FreshMart Groceries,73.33,USD,Groceries,Weekly Grocery Run
+2026-08-11,Corner Hardware & Home,51.74,USD,Shopping,Purchase at Corner Hardware & Home
+2026-08-14,CloudVault Backup Pro,12.99,USD,Subscriptions,CloudVault Backup Pro Monthly Auto-Renewal
+2026-08-15,Harbor Noodle House,40.39,USD,Dining,Dining at Harbor Noodle House
+2026-08-17,FreshMart Groceries,67.25,USD,Groceries,Weekly Grocery Run
+2026-08-18,GridPower Electric,87.06,USD,Utilities,Monthly Electric Utility Bill
+2026-08-19,MegaTech Electronics,1249.00,USD,Shopping,Workstation Monitor & Dock Bundle
+2026-08-20,CityFuel Station,40.57,USD,Transport,CityFuel Station
+2026-08-22,Neighborhood Bistro,46.67,USD,Dining,Dining at Neighborhood Bistro
+2026-08-25,FreshMart Groceries,67.74,USD,Groceries,Weekly Grocery Run
+2026-08-27,Everyday Goods Co,62.55,USD,Shopping,Purchase at Everyday Goods Co
+2026-09-03,FreshMart Groceries,70.84,USD,Groceries,Weekly Grocery Run
+2026-09-04,Metro Transit Pass,28.03,USD,Transport,Metro Transit Pass
+2026-09-05,StreamFlix HD,19.99,USD,Subscriptions,StreamFlix Monthly Plan
+2026-09-07,Bean & Leaf Cafe,10.39,USD,Dining,Dining at Bean & Leaf Cafe
+2026-09-10,FreshMart Groceries,75.22,USD,Groceries,Weekly Grocery Run
+2026-09-11,Corner Hardware & Home,30.61,USD,Shopping,Purchase at Corner Hardware & Home
+2026-09-14,CloudVault Backup Pro,12.99,USD,Subscriptions,CloudVault Backup Pro Monthly Auto-Renewal
+2026-09-15,Harbor Noodle House,32.86,USD,Dining,Dining at Harbor Noodle House
+2026-09-17,FreshMart Groceries,60.77,USD,Groceries,Weekly Grocery Run
+2026-09-18,GridPower Electric,78.19,USD,Utilities,Monthly Electric Utility Bill
+2026-09-20,CityFuel Station,38.12,USD,Transport,CityFuel Station
+2026-09-22,Neighborhood Bistro,53.11,USD,Dining,Dining at Neighborhood Bistro
+2026-09-25,FreshMart Groceries,80.41,USD,Groceries,Weekly Grocery Run
+2026-09-27,Everyday Goods Co,29.16,USD,Shopping,Purchase at Everyday Goods Co

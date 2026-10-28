@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LSU Student AI Companion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 min-h-screen text-slate-800 flex items-center justify-center p-2 sm:p-6 font-sans">
+
+  <!-- Mobile App Frame Container -->
+  <div class="bg-slate-50 w-full max-w-md rounded-3xl shadow-2xl overflow-hidden border border-slate-700 flex flex-col h-[92vh]">
+    
+    <!-- Header: Student Profile Switcher & Sync Status -->
+    <header class="bg-purple-900 text-white p-4 shadow-md shrink-0">
+      <div class="flex justify-between items-center mb-2">
+        <div>
+          <h1 class="text-base font-bold tracking-wide">LSU Event Finder AI</h1>
+          <p class="text-[11px] text-purple-200">Hacktoberfest '26 Hackathon Prototype</p>
+        </div>
+        <select id="studentSelect" onchange="switchStudent()" class="bg-purple-800 text-white text-xs rounded-lg px-2 py-1 border border-purple-600 focus:outline-none">
+          <option value="STU001">Alex Smith (STU001)</option>
+          <option value="STU002">Maya Patel (STU002)</option>
+          <option value="STU003">Liam Chen (STU003)</option>
+        </select>
+      </div>
+      
+      <!-- AI Sync Status Banner -->
+      <div class="bg-purple-800/80 border border-purple-700 rounded-lg p-2 text-[11px] flex justify-between items-center">
+        <span>⚡ Synced with Google Calendar</span>
+        <span class="bg-emerald-500/20 text-emerald-300 font-mono text-[10px] px-1.5 py-0.5 rounded border border-emerald-500/30">Active</span>
+      </div>
+    </header>
+
+    <!-- App Body: Scrollable Feed -->
+    <div class="p-4 overflow-y-auto flex-1 space-y-4 text-xs">
+      
+      <!-- Interests Bar -->
+      <div>
+        <h2 class="font-semibold text-slate-500 uppercase tracking-wider mb-2 text-[10px]">Student Interests</h2>
+        <div id="interestTags" class="flex flex-wrap gap-1.5">
+          <!-- Loaded dynamically based on selected student -->
+        </div>
+      </div>
+
+      <!-- Google Calendar Busy Schedule View -->
+      <div class="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm space-y-1">
+        <div class="flex justify-between items-center">
+          <p class="font-semibold text-slate-700 text-[11px]">📅 Today's Calendar Schedule:</p>
+          <span class="text-[10px] text-slate-400 font-mono">Month View</span>
+        </div>
+        <div id="calendarSlots" class="flex gap-1.5 overflow-x-auto text-[10px] pb-1">
+          <!-- Loaded dynamically based on student schedule -->
+        </div>
+      </div>
+
+      <!-- Recommendations Feed -->
+      <div class="space-y-3">
+        <div class="flex justify-between items-center">
+          <h2 class="font-bold text-slate-800 text-xs">Recommended Events</h2>
+          <span class="text-purple-700 text-[10px] font-semibold">AI Match Score</span>
+        </div>
+
+        <div id="eventsFeed" class="space-y-3">
+          <!-- Event Cards Rendered Here -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <nav class="bg-white border-t border-slate-200 p-2.5 flex justify-around text-slate-500 text-[11px] shrink-0 font-medium">
+      <button class="text-purple-900 font-bold flex flex-col items-center">
+        <span>🔥</span>
+        <span>Feed</span>
+      </button>
+      <button class="flex flex-col items-center hover:text-purple-900">
+        <span>📅</span>
+        <span>Calendar</span>
+      </button>
+      <button class="flex flex-col items-center hover:text-purple-900">
+        <span>⚽</span>
+        <span>Sports</span>
+      </button>
+      <button class="flex flex-col items-center hover:text-purple-900">
+        <span>👤</span>
+        <span>Profile</span>
+      </button>
+    </nav>
+  </div>
+
+  <script>
+    // 1. Mock Student Database (mimicking students.csv)
+    const studentsData = {
+      "STU001": { id: "STU001", name: "Alex Smith", interests: ["sports", "social", "wellbeing"] },
+      "STU002": { id: "STU002", name: "Maya Patel", interests: ["societies", "creative", "wellbeing"] },
+      "STU003": { id: "STU003", name: "Liam Chen", interests: ["sports", "creative", "social"] }
+    };
+
+    // 2. Mock Google Calendar Schedule Database (mimicking calendar.csv)
+    const calendarData = {
+      "STU001": [
+        { title: "COA101 Lecture", start: "09:00", end: "11:00" },
+        { title: "Group Lab Session", start: "14:00", end: "15:30" }
+      ],
+      "STU002": [
+        { title: "Art & Design Seminar", start: "11:00", end: "13:00" },
+        { title: "Library Study Group", start: "16:00", end: "18:00" }
+      ],
+      "STU003": [
+        { title: "Engineering Workshop", start: "10:00", end: "12:00" },
+        { title: "Cricket Practice", start: "15:00", end: "17:00" }
+      ]
+    };
+
+    // 3. Mock Events Database (mimicking LSU & Loughborough Sport events.csv)
+    const eventsData = [
+      {
+        id: "EVT101",
+        name: "LSU Social: Midweek Stash Night",
+        startTime: "21:00",
+        endTime: "02:00",
+        description: "The iconic Loughborough Student Union night out. Gather your hall or society for food, drinks, and music.",
+        tags: ["social"]
+      },
+      {
+        id: "EVT102",
+        name: "Loughborough Sport: Social Badminton",
+        startTime: "14:30",
+        endTime: "16:00",
+        description: "Casual drop-in badminton session at Sir David Wallace Sports Hall. Racquets and shuttlecocks provided.",
+        tags: ["sports", "wellbeing"]
+      },
+      {
+        id: "EVT103",
+        name: "Mindfulness & Tea Pottery Workshop",
+        startTime: "16:30",
+        endTime: "18:00",
+        description: "Relaxing creative pottery session organized by LSU Wellbeing and Creative Societies.",
+        tags: ["creative", "wellbeing"]
+      },
+      {
+        id: "EVT104",
+        name: "AU Athletic Union Captains Briefing",
+        startTime: "10:00",
+        endTime: "11:30",
+        description: "Mandatory training session for all Loughborough Sports team captains and executive members.",
+        tags: ["sports", "societies"]
+      }
+    ];
+
+    let currentStudentId = "STU001";
+
+    // Helper: Compute AI Match Score based on Interest overlapping
+    function calculateMatchScore(studentInterests, eventTags) {
+      let matches = 0;
+      eventTags.forEach(tag => {
+        if (studentInterests.includes(tag.toLowerCase())) matches++;
+      });
+      if (matches === 0) return 45;
+      if (matches === 1) return 75;
+      return 95;
+    }
+
+    // Helper: Detect Schedule Clashes using Calendar Data
+    function checkScheduleConflict(eventStart, eventEnd, busySlots) {
+      const eStart = parseInt(eventStart.replace(':', ''));
+      const eEnd = parseInt(eventEnd.replace(':', ''));
+
+      for (let slot of busySlots) {
+        const bStart = parseInt(slot.start.replace(':', ''));
+        const bEnd = parseInt(slot.end.replace(':', ''));
+
+        if ((eStart >= bStart && eStart < bEnd) || (eEnd > bStart && eEnd <= bEnd)) {
+          return { hasConflict: true, busyTitle: slot.title };
+        }
+      }
+      return { hasConflict: false };
+    }
+
+    // Render Student Details & Feed
+    function renderApp() {
+      const student = studentsData[currentStudentId];
+      const busySlots = calendarData[currentStudentId];
+
+      // Render Student Interests
+      const interestContainer = document.getElementById('interestTags');
+      interestContainer.innerHTML = ["sports", "societies", "creative", "social", "wellbeing"].map(tag => {
+        const isActive = student.interests.includes(tag);
+        return `<span class="${isActive ? 'bg-purple-700 text-white font-semibold' : 'bg-white text-slate-500 border border-slate-200'} px-2.5 py-1 rounded-full text-[10px] capitalize shadow-xs">${tag}</span>`;
+      }).join('');
+
+      // Render Google Calendar Slots
+      const calendarContainer = document.getElementById('calendarSlots');
+      calendarContainer.innerHTML = busySlots.map(slot => 
+        `<span class="bg-slate-100 border border-slate-200 px-2 py-1 rounded text-slate-600 font-mono whitespace-nowrap">
+          ${slot.start} - ${slot.end}: <strong class="font-sans font-medium text-slate-800">${slot.title}</strong>
+        </span>`
+      ).join('');
+
+      // Calculate & Sort Events by Match Score
+      const processedEvents = eventsData.map(evt => ({
+        ...evt,
+        matchScore: calculateMatchScore(student.interests, evt.tags),
+        conflict: checkScheduleConflict(evt.startTime, evt.endTime, busySlots)
+      })).sort((a, b) => b.matchScore - a.matchScore);
+
+      // Render Event Feed
+      const feedContainer = document.getElementById('eventsFeed');
+      feedContainer.innerHTML = processedEvents.map(evt => `
+        <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-xs space-y-2">
+          <div class="flex justify-between items-start">
+            <span class="bg-purple-50 text-purple-700 border border-purple-200 font-bold text-[10px] px-2 py-0.5 rounded-md flex items-center gap-1">
+              ✨ ${evt.matchScore}% Match
+            </span>
+            <button onclick="this.classList.toggle('text-rose-500')" class="text-slate-300 font-bold hover:text-rose-500 text-sm transition-colors">♥</button>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-slate-900 text-xs">${evt.name}</h3>
+            <p class="text-slate-600 text-[11px] mt-0.5 line-clamp-2">${evt.description}</p>
+          </div>
+
+          <div class="flex flex-wrap gap-1">
+            ${evt.tags.map(t => `<span class="bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded text-[9px] uppercase font-mono">#${t}</span>`).join('')}
+          </div>
+
+          <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[10px]">
+            <span class="font-mono text-slate-500">⏰ ${evt.startTime} - ${evt.endTime}</span>
+            ${evt.conflict.hasConflict ? 
+              `<span class="text-amber-700 font-medium bg-amber-50 px-2 py-0.5 rounded border border-amber-200">⚠️ Clashes with ${evt.conflict.busyTitle}</span>` : 
+              `<span class="text-emerald-700 font-medium bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">✓ Free in Calendar</span>`
+            }
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function switchStudent() {
+      currentStudentId = document.getElementById('studentSelect').value;
+      renderApp();
+    }
+
+    // Initialize App
+    renderApp();
+  </script>
+</body>
+</html>

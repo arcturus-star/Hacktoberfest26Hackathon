@@ -1,0 +1,12 @@
+{
+  "name": "lboroconnect-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-free demo interface for LboroConnect",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

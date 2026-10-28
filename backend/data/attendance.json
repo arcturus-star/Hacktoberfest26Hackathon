@@ -1,0 +1,18 @@
+[
+  {
+    "studentId": "S001",
+    "activityId": "activity-past-running"
+  },
+  {
+    "studentId": "S002",
+    "activityId": "activity-past-pottery"
+  },
+  {
+    "studentId": "S003",
+    "activityId": "activity-past-running"
+  },
+  {
+    "studentId": "S003",
+    "activityId": "activity-past-pottery"
+  }
+]

@@ -1,6 +1,0 @@
-{"file": "cord_0.jpg", "status": "needs_review", "merchant": "EDC CIMB NIAGA", "truth_total": "60.000", "model_total": 60000.0, "currency": "USD", "items": 1, "total_match": true, "seconds": 207, "error": "No date found on receipt; today's date used"}
-{"file": "cord_1.jpg", "status": "needs_review", "merchant": "SAMS", "truth_total": "91000", "model_total": 91000.0, "currency": "USD", "items": 3, "total_match": true, "seconds": 202, "error": "No date found on receipt; today's date used"}
-{"file": "cord_2.jpg", "status": "needs_review", "merchant": "null", "truth_total": "28,000", "model_total": 100000.0, "currency": "USD", "items": 2, "total_match": false, "seconds": 184, "error": "No date found on receipt; today's date used"}
-{"file": "cord_3.jpg", "status": "needs_review", "merchant": "Dynamic Bakery & Cafe", "truth_total": "11,000", "model_total": 11000.0, "currency": "USD", "items": 1, "total_match": true, "seconds": 219, "error": "No date found on receipt; today's date used"}
-{"file": "cord_4.jpg", "status": "ok", "merchant": "Starbucks", "truth_total": "174,600", "model_total": 194.0, "currency": "USD", "items": 3, "total_match": false, "seconds": 192, "error": ""}
-matched 3 of 5

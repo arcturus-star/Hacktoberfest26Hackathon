@@ -50,6 +50,6 @@ Represent interests and tags as JSON arrays. Agree how activity instances are id
 
 The shared repository is https://github.com/arcturus-star/Hacktoberfest26Hackathon. Pull the latest main branch before starting. Work on separate feature branches, communicate changes to shared interfaces, and merge small, tested changes frequently. Never commit API keys or real student data.
 
-Commit `56fecd8` added AGENTS.md and PROJECT.md, but it also unintentionally included 32 files that were already staged, including application code, sample data and tests. Their relevance to this student activity app has not been verified. Inspect existing files before reusing, changing, or removing them; do not assume they implement this app. The coordinator's GitHub CLI was authenticated as `arcturus-star` when the commit was pushed.
+An unrelated project was accidentally committed earlier and has been removed from the current branch. The coordinator's GitHub CLI was authenticated as `arcturus-star` when the planning documents were pushed.
 
 This handoff is a planning document: app functionality, Gemma connectivity, app integrations, and calendar access have not been established by this conversation.

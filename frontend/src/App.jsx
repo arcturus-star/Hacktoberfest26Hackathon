@@ -37,6 +37,7 @@ export default function App() {
 
   // Load students & activities
   const loadInitialData = useCallback(async (currentMockMode = isMockMode, currentBaseUrl = apiBaseUrl) => {
+    const token = ++initialRequest.current;
     setIsLoading(true);
     setError(null);
     try {
@@ -58,9 +59,9 @@ export default function App() {
         });
       }
     } catch (err) {
-      setError(err);
+      if (token === initialRequest.current) setError(err);
     } finally {
-      setIsLoading(false);
+      if (token === initialRequest.current) setIsLoading(false);
     }
   }, [isMockMode, apiBaseUrl]);
 
@@ -90,9 +91,9 @@ export default function App() {
       setRecMode(res.mode || (currentMockMode ? 'mock' : 'fallback'));
       setRecNotice(res.notice || null);
     } catch (err) {
-      setError(err);
+      if (token === recRequest.current) setError(err);
     } finally {
-      setIsLoading(false);
+      if (token === recRequest.current) setIsLoading(false);
     }
   }, [selectedStudentId, limit, isMockMode, apiBaseUrl, activities]);
 

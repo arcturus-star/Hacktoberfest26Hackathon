@@ -10,6 +10,17 @@ See [PROJECT.md](PROJECT.md) for the proposed architecture and [TEAM_HANDOFF.md]
 
 Backend Codex agent: start with the [backend implementation assignment](docs/superpowers/plans/2026-10-28-backend.md). Agy owns the frontend; use the HTTP contract in that assignment for parallel work.
 
+## Frontend: Student Interface
+
+Agy owns the student-facing interface in `frontend/`.
+
+- **Install:** `cd frontend && npm install`
+- **Start Development Server:** `cd frontend && npm run dev` (runs at `http://localhost:5173`)
+- **Build & Preview:** `cd frontend && npm run build && npm run preview` (runs at `http://localhost:4173`)
+- **Run Unit Tests:** `cd frontend && npm test`
+- **Run Browser Verification:** `cd frontend && npm run verify`
+- **API Configuration:** Configure `VITE_API_BASE_URL` (default: `http://localhost:3001`) or use the in-app **Settings** modal with health check. Includes offline mock mode while backend is unavailable. See [`frontend/README.md`](frontend/README.md) for full documentation.
+
 ## Sol: existing data validation and demo scenarios
 
 Synthetic data already exists. Reuse it; do not create a replacement dataset. Sol owns checking the data and preparing repeatable demo scenarios, while the backend agent owns service code and Agy with the coordinating Codex agent owns frontend and integration.

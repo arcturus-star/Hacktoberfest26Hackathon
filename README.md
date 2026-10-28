@@ -8,4 +8,4 @@ A hackathon project to help Loughborough students discover activities based on t
 
 See [PROJECT.md](PROJECT.md) for the proposed architecture and [TEAM_HANDOFF.md](TEAM_HANDOFF.md) for team roles and agent assignments.
 
-Backend Codex agent: start with the [backend implementation assignment](docs/superpowers/plans/2026-10-28-backend.md). Agy owns the frontend; use the HTTP contract in that assignment for parallel work.
+The backend implementation and frontend API contract are in [docs/superpowers/plans/2026-10-28-backend.md](docs/superpowers/plans/2026-10-28-backend.md). Agy owns the frontend; see [backend/README.md](backend/README.md) for the backend setup and HTTP API.

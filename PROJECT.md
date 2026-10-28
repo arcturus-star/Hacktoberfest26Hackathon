@@ -11,7 +11,7 @@ Help Loughborough students discover activities they may enjoy based on their pas
 3. Find candidates from interests and past attendance. Send their details and the student's interests to Gemma to rank and explain the matches. Return only IDs from the supplied candidates; validate model output and handle unavailable or invalid responses with a clear fallback.
 4. Show each activity's name, time, location and a short reason for the recommendation.
 
-Flow: UI -> recommendation service -> mock data + Gemma -> ranked results -> UI. Keep Gemma credentials on the server and out of Git. Model hosting, framework and deployment are team decisions; no integration has been implemented yet.
+Flow: UI -> recommendation service -> local synthetic JSON + optional Gemma-compatible ranking -> ranked results -> UI. The Node.js backend in `backend/` implements the health, student, activity and recommendation endpoints and deterministic offline ranking. It keeps Gemma credentials on the server and out of Git. A live provider endpoint and Gemma request have not been configured or verified.
 
 ## Shared data contract (proposal)
 

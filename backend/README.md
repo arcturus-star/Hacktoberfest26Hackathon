@@ -13,7 +13,7 @@ cd backend
 npm start
 ```
 
-The service listens on `http://localhost:3001` by default. Set `PORT` to a different integer from 1 to 65535. Configure `FRONTEND_ORIGIN` to the frontend's exact browser origin to enable CORS for that origin; the example default is `http://localhost:5173`. `OPTIONS` preflight requests are supported.
+The service listens on `http://localhost:3001` by default. Set `PORT` to a different integer from 1 to 65535. Configure `FRONTEND_ORIGIN` to the frontend's exact browser origin to enable CORS for that origin; for example `http://localhost:5173`. No cross-origin browser access is enabled when this value is unset. `OPTIONS` preflight requests are supported.
 
 To run the test suite:
 

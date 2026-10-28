@@ -4,7 +4,7 @@ const { createServer } = require('../src/server');
 const { loadData } = require('../src/data');
 
 async function withServer(options, callback) {
-  const server = createServer({ data: loadData(), now: () => new Date('2026-10-28T12:00:00Z'), ...options });
+  const server = createServer({ env: {}, data: loadData(), now: () => new Date('2026-10-28T12:00:00Z'), ...options });
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
   const address = server.address();
   try { await callback(`http://127.0.0.1:${address.port}`); }
@@ -66,5 +66,40 @@ test('responds to preflight and only exposes the configured frontend origin', as
     assert.equal(options.headers.get('access-control-allow-origin'), 'http://localhost:5173');
     const denied = await fetch(`${base}/api/health`, { headers: { Origin: 'https://other.example' } });
     assert.equal(denied.headers.get('access-control-allow-origin'), null);
+  });
+});
+
+
+test('valid provider ranking is exposed through HTTP and respects requested limit', async () => {
+  let supplied;
+  await withServer({ ranker: async ({ candidates }) => {
+    supplied = candidates;
+    return candidates.slice().reverse().map(c => ({ activityId: c.id, reason: 'A supplied candidate match.' }));
+  } }, async base => {
+    const response = await fetch(base + '/api/students/S001/recommendations?limit=2');
+    assert.equal(response.status, 200);
+    const result = await response.json();
+    assert.equal(result.mode, 'gemma');
+    assert.equal(result.notice, null);
+    assert.equal(result.recommendations.length, 2);
+    assert.deepEqual(result.recommendations.map(r => r.activityId), supplied.slice().reverse().slice(0, 2).map(c => c.id));
+  });
+});
+
+test('provider failure returns a safe HTTP fallback; empty results skip provider', async () => {
+  await withServer({ ranker: async () => { throw new Error('secret-provider-detail'); } }, async base => {
+    const response = await fetch(base + '/api/students/S001/recommendations');
+    assert.equal(response.status, 200);
+    const result = await response.json();
+    assert.equal(result.mode, 'fallback');
+    assert.ok(result.recommendations.length > 0);
+    assert.doesNotMatch(JSON.stringify(result), /secret-provider-detail/);
+  });
+  let called = false;
+  await withServer({ now: () => new Date('2026-11-20T00:00:00Z'), ranker: async () => { called = true; } }, async base => {
+    const response = await fetch(base + '/api/students/S001/recommendations');
+    assert.equal(response.status, 200);
+    assert.deepEqual((await response.json()).recommendations, []);
+    assert.equal(called, false);
   });
 });

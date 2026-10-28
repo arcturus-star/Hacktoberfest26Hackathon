@@ -1,0 +1,40 @@
+calendar_date,calendar_time,calendar_event_name,calendar_location,calendar_description,calendar_category,calendar_duration_minutes
+2026-11-01,09:00,Lecture - Module Physics 101,Science Building Room 102,Thermodynamics lecture with Dr. Williams. Attend for exam prep.,academic,60
+2026-11-01,11:00,Seminar - Group Project Meeting,Student Union Room 5,Weekly project team meeting to discuss timeline and task allocation.,academic,90
+2026-11-01,14:30,Gym Session - Weight Training,Holywell Fitness Centre,Personal strength training routine. Lower body focus.,personal,60
+2026-11-01,18:30,Badminton Club Training Session,Rutland Sports Complex,Weekly club training. Bring racket and shoes.,sport,90
+2026-11-02,10:00,Lecture - Module History 202,History Department Room 3,Medieval Europe: Politics and Society.,academic,60
+2026-11-02,14:00,Part-Time Shift - Library Assistant,University Library Main Desk,Shelving books and helping patrons.,work,240
+2026-11-02,18:00,Dinner with Friends,The Feud Restaurant,Casual meet-up with coursemates.,social,120
+2026-11-03,09:30,Lecture - Module English Lit 150,Arts Building Room 15,Shakespeare analysis: Macbeth.,academic,60
+2026-11-03,13:00,Free Time / Study,Student Room,Work on coursework assignment.,personal,180
+2026-11-03,16:00,Errands - Shopping,Town Centre,Buy groceries and stationery.,personal,90
+2026-11-03,18:00,Meditation & Mindfulness Evening,Wellness Centre Room 1,Guided meditation session for stress relief.,wellbeing,60
+2026-11-04,10:00,Practical Lab Session - Chemistry,Science Building Lab 7,Organic chemistry experiments.,academic,120
+2026-11-04,13:00,Lunch Break,Student Union Café,Grab lunch and catch up with flatmates.,personal,60
+2026-11-04,15:30,Tutorial - Module Physics 101,Science Building Room 45,One-on-one with Dr. Williams to discuss assignments.,academic,60
+2026-11-04,18:00,Cheerleading Squad Training,Dance Studio B,Training session for competition season.,sport,90
+2026-11-05,08:00,Early Gym Session - Cardio,Holywell Fitness Centre,Morning run and stretching routine.,personal,60
+2026-11-05,09:00,Lecture - Module Psychology 200,Psychology Department Room 10,Cognitive psychology and memory.,academic,60
+2026-11-05,11:00,Library Research,University Library 3rd Floor,Research for history project.,academic,120
+2026-11-05,14:30,Lunch Date,Campus Café,Meet friend for coffee and snacks.,social,90
+2026-11-05,17:00,Free Time,Student Room,Relax and watch TV.,personal,120
+2026-11-05,19:30,Film Society Screening,Lecture Theatre B,Monthly film screening and discussion.,social,150
+2026-11-06,09:00,Lecture - Module Philosophy 101,Philosophy Department,Introduction to Ethics.,academic,60
+2026-11-06,11:00,Lecture - Module German 250,Languages Building,German literature and translation.,academic,60
+2026-11-06,14:00,Pottery Workshop - Wheel Throwing,Art Studio Block A,Intermediate pottery class.,creative,90
+2026-11-06,17:30,Yoga & Flexibility for Athletes,Wellness Centre Room 2,Sports-focused yoga session.,wellbeing,60
+2026-11-07,10:00,Lecture - Module Business 120,Business School Room 1,Organisational Management principles.,academic,60
+2026-11-07,12:00,Lunch and Podcast,Student Room,Eat lunch and listen to podcast.,personal,60
+2026-11-07,14:00,Group Study Session,Library Study Pods,Revise for upcoming exams with study group.,academic,120
+2026-11-07,16:30,Networking Event - Sports Careers,Conference Centre Hall A,Meet industry professionals.,professional,120
+2026-11-08,09:00,Lecture - Module Physics 101,Science Building Room 102,Quantum mechanics introduction.,academic,60
+2026-11-08,11:00,Free Slot,Student Room,Personal time.,personal,60
+2026-11-08,13:00,Lunch,Student Union Café,Grab quick lunch.,personal,45
+2026-11-08,14:00,Life Drawing Class,Art Studio Block B,Beginner figure drawing session.,creative,120
+2026-11-08,18:00,Wellbeing Workshop - Sleep & Recovery,Wellness Centre Room 1,Expert advice on sleep optimisation.,wellbeing,60
+2026-11-09,10:00,Lecture - Module History 202,History Department Room 3,Medieval warfare and military structures.,academic,60
+2026-11-09,13:00,Part-Time Shift - Library,University Library Main Desk,Afternoon library shift.,work,240
+2026-11-09,18:30,Judo Training,Martial Arts Centre,Weekly judo progression session.,sport,90
+2026-11-10,11:00,Lecture - Module Psychology 200,Psychology Department Room 10,Research methods and statistics.,academic,60
+2026-11-10,13:00,Free Time,Student Room,Relax and personal tasks.,personal,180

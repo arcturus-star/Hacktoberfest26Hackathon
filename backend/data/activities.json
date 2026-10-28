@@ -1,0 +1,479 @@
+[
+  {
+    "id": "activity-e001",
+    "name": "Football League Match - Men's vs Coventry",
+    "description": "Watch the Loughborough Men's Football team take on Coventry in a thrilling league fixture. Come support the team and enjoy elite-level football.",
+    "tags": [
+      "sport",
+      "football",
+      "team-sport"
+    ],
+    "start": "2026-11-01T14:00:00.000Z",
+    "end": "2026-11-01T15:30:00.000Z",
+    "location": "Loughborough Stadium",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e002",
+    "name": "Badminton Club Training Session",
+    "description": "Open training session for all skill levels. Improve your technique and join our thriving badminton community.",
+    "tags": [
+      "sport",
+      "badminton",
+      "training",
+      "recreational"
+    ],
+    "start": "2026-11-01T18:30:00.000Z",
+    "end": "2026-11-01T20:00:00.000Z",
+    "location": "Rutland Sports Complex",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e003",
+    "name": "Pottery Workshop - Begin with Clay",
+    "description": "A beginner-friendly pottery workshop led by professional ceramicists. Create your first clay piece and explore sculptural techniques.",
+    "tags": [
+      "creative",
+      "art",
+      "workshop",
+      "hands-on"
+    ],
+    "start": "2026-11-02T15:00:00.000Z",
+    "end": "2026-11-02T16:30:00.000Z",
+    "location": "Art Studio Block A",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e004",
+    "name": "Volleyball Club Social & Newcomers Welcome",
+    "description": "Meet new members and current players over refreshments. Learn about our club structure and upcoming fixtures.",
+    "tags": [
+      "sport",
+      "volleyball",
+      "social",
+      "recreational"
+    ],
+    "start": "2026-11-02T19:00:00.000Z",
+    "end": "2026-11-02T20:30:00.000Z",
+    "location": "Rutland Sports Hall",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e005",
+    "name": "Guitar Circle Open Session",
+    "description": "Bring your acoustic guitar and join our relaxed circle to jam and meet other musicians. All levels welcome.",
+    "tags": [
+      "creative",
+      "music",
+      "social",
+      "casual"
+    ],
+    "start": "2026-11-03T17:30:00.000Z",
+    "end": "2026-11-03T19:00:00.000Z",
+    "location": "Student Union Music Room",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e006",
+    "name": "Meditation & Mindfulness Evening",
+    "description": "Guided meditation session to reduce stress and improve mental clarity. Perfect for exam preparation or general wellbeing.",
+    "tags": [
+      "wellbeing",
+      "mental-health",
+      "relaxation",
+      "guided"
+    ],
+    "start": "2026-11-03T18:00:00.000Z",
+    "end": "2026-11-03T19:30:00.000Z",
+    "location": "Wellness Centre Room 1",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e009",
+    "name": "Rugby Union Training - Open to All",
+    "description": "Structured training session for all abilities. Learn fundamental rugby skills in a supportive environment. No experience necessary.",
+    "tags": [
+      "sport",
+      "rugby",
+      "training",
+      "recreational"
+    ],
+    "start": "2026-11-05T18:30:00.000Z",
+    "end": "2026-11-05T20:00:00.000Z",
+    "location": "Rugby Pitches",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e010",
+    "name": "Film Society Screening - Classic Cinema",
+    "description": "Monthly screening of a classic film followed by informal discussion. This month: a cinematic masterpiece from the 1980s.",
+    "tags": [
+      "creative",
+      "film",
+      "discussion",
+      "social"
+    ],
+    "start": "2026-11-05T20:00:00.000Z",
+    "end": "2026-11-05T21:30:00.000Z",
+    "location": "Lecture Theatre B",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e011",
+    "name": "Squash Court Booking & Lessons",
+    "description": "Book individual or group lessons with qualified coaches. Improve your game in a competitive but friendly setting.",
+    "tags": [
+      "sport",
+      "squash",
+      "training",
+      "one-to-one"
+    ],
+    "start": "2026-11-06T16:00:00.000Z",
+    "end": "2026-11-06T17:30:00.000Z",
+    "location": "Holywell Fitness Centre",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e012",
+    "name": "Pottery Workshop - Wheel Throwing Intermediate",
+    "description": "Progress to the pottery wheel. Learn centering and shaping techniques in this intermediate-level session.",
+    "tags": [
+      "creative",
+      "art",
+      "workshop",
+      "skill-building"
+    ],
+    "start": "2026-11-06T15:00:00.000Z",
+    "end": "2026-11-06T16:30:00.000Z",
+    "location": "Art Studio Block A",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e013",
+    "name": "Yoga & Flexibility for Athletes",
+    "description": "Sports-focused yoga session designed for athletes of all disciplines. Enhance flexibility and prevent injuries.",
+    "tags": [
+      "sport",
+      "wellbeing",
+      "yoga",
+      "fitness"
+    ],
+    "start": "2026-11-06T17:30:00.000Z",
+    "end": "2026-11-06T19:00:00.000Z",
+    "location": "Wellness Centre Room 2",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e015",
+    "name": "Cycling Club Weekend Ride Planning",
+    "description": "Plan upcoming weekend routes and social rides. Suitable for road cycling and mountain biking enthusiasts.",
+    "tags": [
+      "sport",
+      "cycling",
+      "social",
+      "planning"
+    ],
+    "start": "2026-11-07T19:00:00.000Z",
+    "end": "2026-11-07T20:30:00.000Z",
+    "location": "Student Union Meeting Room 3",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e016",
+    "name": "Life Drawing Class for Beginners",
+    "description": "Explore figure drawing fundamentals with live model sessions. No previous art experience required.",
+    "tags": [
+      "creative",
+      "art",
+      "drawing",
+      "instructional"
+    ],
+    "start": "2026-11-08T14:00:00.000Z",
+    "end": "2026-11-08T15:30:00.000Z",
+    "location": "Art Studio Block B",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e017",
+    "name": "Aqua Aerobics - Full Body Workout",
+    "description": "High-energy water-based fitness class. Low-impact cardio workout suitable for all fitness levels.",
+    "tags": [
+      "sport",
+      "swimming",
+      "fitness",
+      "group-class"
+    ],
+    "start": "2026-11-08T11:00:00.000Z",
+    "end": "2026-11-08T12:30:00.000Z",
+    "location": "Olympic Pool",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e018",
+    "name": "Wellbeing Workshop - Sleep & Recovery",
+    "description": "Expert-led session on optimising sleep patterns and recovery techniques for students and athletes.",
+    "tags": [
+      "wellbeing",
+      "sleep",
+      "health",
+      "education"
+    ],
+    "start": "2026-11-08T18:00:00.000Z",
+    "end": "2026-11-08T19:30:00.000Z",
+    "location": "Wellness Centre Room 1",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e019",
+    "name": "Jazz Ensemble Rehearsal (Open to Observe)",
+    "description": "Observe or participate in our jazz ensemble as we prepare for upcoming performances.",
+    "tags": [
+      "creative",
+      "music",
+      "performance",
+      "observational"
+    ],
+    "start": "2026-11-09T18:30:00.000Z",
+    "end": "2026-11-09T20:00:00.000Z",
+    "location": "Music Block Practice Room 4",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e020",
+    "name": "Judo Training & Progression Sessions",
+    "description": "Traditional judo training for all grades. Work towards belt progression with experienced coaches.",
+    "tags": [
+      "sport",
+      "martial-arts",
+      "judo",
+      "training"
+    ],
+    "start": "2026-11-09T18:00:00.000Z",
+    "end": "2026-11-09T19:30:00.000Z",
+    "location": "Martial Arts Centre",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e021",
+    "name": "Social Baking Night - Freshers Bonding",
+    "description": "Bake sweet and savoury treats while getting to know other freshers. No baking experience needed!",
+    "tags": [
+      "social",
+      "creative",
+      "baking",
+      "fun"
+    ],
+    "start": "2026-11-10T19:00:00.000Z",
+    "end": "2026-11-10T20:30:00.000Z",
+    "location": "Student Union Kitchen",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e022",
+    "name": "Tennis Tournament - Singles Draw",
+    "description": "Friendly singles tournament for competitive players. Multiple skill categories. Sign up before November 7th.",
+    "tags": [
+      "sport",
+      "tennis",
+      "competition",
+      "tournament"
+    ],
+    "start": "2026-11-10T10:00:00.000Z",
+    "end": "2026-11-10T11:30:00.000Z",
+    "location": "Tennis Courts A-D",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e023",
+    "name": "Spin Class & Cycling Fitness",
+    "description": "Early morning high-energy spin class to kickstart your day. Indoor cycling with motivational coaching.",
+    "tags": [
+      "sport",
+      "cycling",
+      "fitness",
+      "group-class"
+    ],
+    "start": "2026-11-11T06:30:00.000Z",
+    "end": "2026-11-11T08:00:00.000Z",
+    "location": "Holywell Fitness Centre",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e024",
+    "name": "Muay Thai Club Training",
+    "description": "Learn authentic Muay Thai techniques from certified instructors. All levels welcome; protective gear provided.",
+    "tags": [
+      "sport",
+      "martial-arts",
+      "kickboxing",
+      "training"
+    ],
+    "start": "2026-11-11T19:00:00.000Z",
+    "end": "2026-11-11T20:30:00.000Z",
+    "location": "Martial Arts Centre",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e025",
+    "name": "Photography Walk & Portfolio Review",
+    "description": "Guided photography walk capturing campus landscapes. Includes informal portfolio feedback from experienced photographers.",
+    "tags": [
+      "creative",
+      "photography",
+      "outdoor",
+      "educational"
+    ],
+    "start": "2026-11-12T14:00:00.000Z",
+    "end": "2026-11-12T15:30:00.000Z",
+    "location": "Campus Grounds",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e026",
+    "name": "Mental Health First Aider Training",
+    "description": "Accredited training course to become a Mental Health First Aider. Learn to support peers during challenging times.",
+    "tags": [
+      "wellbeing",
+      "mental-health",
+      "training",
+      "certification"
+    ],
+    "start": "2026-11-12T10:00:00.000Z",
+    "end": "2026-11-12T11:30:00.000Z",
+    "location": "Wellness Centre Room 1",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e028",
+    "name": "Digital Art & Design Workshop",
+    "description": "Introduction to digital illustration and graphic design. Bring your own laptop or use lab computers.",
+    "tags": [
+      "creative",
+      "digital-art",
+      "design",
+      "tech"
+    ],
+    "start": "2026-11-13T16:00:00.000Z",
+    "end": "2026-11-13T17:30:00.000Z",
+    "location": "Computer Lab 5",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e030",
+    "name": "Rowing Team Information Session & Taster",
+    "description": "Learn about competitive rowing. Meet team members and experience a taster session on the water or ergo machines.",
+    "tags": [
+      "sport",
+      "rowing",
+      "water-sport",
+      "taster"
+    ],
+    "start": "2026-11-14T16:00:00.000Z",
+    "end": "2026-11-14T17:30:00.000Z",
+    "location": "Boathouse",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e031",
+    "name": "Wellness Retreat - Outdoor Nature Walk",
+    "description": "Guided nature walk focused on connecting with the outdoors and reducing stress. Suitable for all fitness levels.",
+    "tags": [
+      "wellbeing",
+      "nature",
+      "outdoor",
+      "mental-health"
+    ],
+    "start": "2026-11-15T10:00:00.000Z",
+    "end": "2026-11-15T11:30:00.000Z",
+    "location": "Campus Nature Reserve",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e032",
+    "name": "Kickboxing Class - High Intensity",
+    "description": "Fast-paced kickboxing workout combining cardio and technique. Bring hand wraps and come ready to sweat!",
+    "tags": [
+      "sport",
+      "martial-arts",
+      "fitness",
+      "high-intensity"
+    ],
+    "start": "2026-11-15T17:00:00.000Z",
+    "end": "2026-11-15T18:30:00.000Z",
+    "location": "Martial Arts Centre",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e035",
+    "name": "Pottery Open Studio Session",
+    "description": "Open studio time to work on your own pieces or experiment. Tutors available for guidance.",
+    "tags": [
+      "creative",
+      "art",
+      "pottery",
+      "studio"
+    ],
+    "start": "2026-11-17T15:00:00.000Z",
+    "end": "2026-11-17T16:30:00.000Z",
+    "location": "Art Studio Block A",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e036",
+    "name": "Badminton Tournament - Doubles Competition",
+    "description": "Friendly doubles tournament for intermediate and advanced players. Team up or find a partner at signup.",
+    "tags": [
+      "sport",
+      "badminton",
+      "competition",
+      "tournament"
+    ],
+    "start": "2026-11-17T10:00:00.000Z",
+    "end": "2026-11-17T11:30:00.000Z",
+    "location": "Rutland Sports Complex",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-e039",
+    "name": "Mental Health Matters Panel Discussion",
+    "description": "Speakers from counselling services and peer support share strategies for managing student mental health.",
+    "tags": [
+      "wellbeing",
+      "mental-health",
+      "discussion",
+      "awareness"
+    ],
+    "start": "2026-11-18T18:30:00.000Z",
+    "end": "2026-11-18T20:00:00.000Z",
+    "location": "Conference Centre Hall A",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-past-running",
+    "name": "Demo Campus Run",
+    "description": "A synthetic past activity used to seed attendance history.",
+    "tags": [
+      "sport",
+      "running",
+      "social"
+    ],
+    "start": "2026-10-04T09:00:00Z",
+    "end": "2026-10-04T10:00:00Z",
+    "location": "Campus",
+    "source": "synthetic"
+  },
+  {
+    "id": "activity-past-pottery",
+    "name": "Demo Pottery Workshop",
+    "description": "A synthetic past activity used to seed attendance history.",
+    "tags": [
+      "creative",
+      "art",
+      "workshop"
+    ],
+    "start": "2026-10-07T15:00:00Z",
+    "end": "2026-10-07T16:30:00Z",
+    "location": "Art Studio",
+    "source": "synthetic"
+  }
+]

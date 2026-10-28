@@ -1,0 +1,28 @@
+[
+  {
+    "id": "S001",
+    "name": "Emma Thompson",
+    "interests": [
+      "sport",
+      "social",
+      "wellbeing"
+    ]
+  },
+  {
+    "id": "S002",
+    "name": "James Chen",
+    "interests": [
+      "sport",
+      "creative",
+      "wellbeing"
+    ]
+  },
+  {
+    "id": "S003",
+    "name": "Sarah Williams",
+    "interests": [
+      "social",
+      "creative"
+    ]
+  }
+]

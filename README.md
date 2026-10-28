@@ -33,3 +33,36 @@ Synthetic data already exists. Reuse it; do not create a replacement dataset. So
 6. Push your branch and open a PR with the scenario document, validation findings and any coordinated data fixes. Leave backend implementation and frontend files to their owners; do not merge without coordination.
 
 Deliverable: a repeatable demo checklist grounded in the existing data, with clear expected results and any remaining gaps reported to the coordinator. This assignment supersedes older suggestions that Sol should create new synthetic data.
+
+
+You have one new message.
+
+Skip to content
+Using Gmail with screen readers
+1 of 37
+(no subject)
+Inbox
+Summarise this email
+Rakin C <rakinc04@gmail.com>
+	
+15:56 (0 minutes ago)
+	
+	
+to me
+
+The app recommends events based on what you like and people to go with. This is important because it centralises sports,lectures, su and society events.
+
+Why: this is important because it centralises sports,lectures, su and society events
+
+when people want to go to events they check it out, wait for their friends to decide( can just be a straight no).
+
+allows for more sporadic. people can always check this and doesnt require them to be solo.
+
+there are so many students who struggle with loneliness. this can be a tool used by the school to help these people. up to their discretion on how it is used e.g. once a week or use a recommendation
+
+restricts it to students. more safe it will have people they dont know but also people they know. community
+
+community focused: events have established large groups of people. this feels quite daunting
+
+lowe effort there will be a a form when you go on the app for the first time and you will fill it in to find activities and people to recommend. like a social media except relying on mutual activites rather than friends to provide friend suggestions.
+	#

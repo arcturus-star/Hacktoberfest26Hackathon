@@ -1,3 +1,11 @@
+## Run the complete local demo
+
+From the repository root: `node scripts/start-demo.cjs`, then open http://localhost:3001. Node 20+ only; no installation or credentials required. This serves the frontend and real recommendation API together.
+
+Browser verified: Emma recommendations render; switching to Sarah updates the cards, reasons, dates and locations. Offline fallback is shown explicitly.
+
+Other agent: a working frontend baseline now exists in frontend/index.html. Pull feature/demo-integration before editing; improve or verify this baseline rather than creating a competing frontend. Public hosting and submission are not completed.
+
 # Student activity recommendations
 
 Hacktoberfest 2026 Hackathon, Loughborough.
